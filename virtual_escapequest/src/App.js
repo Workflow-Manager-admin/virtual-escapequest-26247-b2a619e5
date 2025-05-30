@@ -405,7 +405,22 @@ function EscapeQuestMain() {
       >
         {currentPuzzle &&
           <form onSubmit={e => {e.preventDefault(); submitPuzzleAnswer();}}>
-            <div className="vesq-puzzle-q">{currentPuzzle.question}</div>
+            <div className="vesq-puzzle-q">
+              {currentPuzzle.id === 'color-lock'
+                ? (
+                  <div>
+                    <div style={{marginBottom:8}}>The safe has three buttons in these colors:</div>
+                    <span style={{background:'#e94560',padding:'0 6px',borderRadius:4}}>Red</span>{' '}
+                    <span style={{background:'#16213e',color:'#fff',padding:'0 6px',borderRadius:4}}>Blue</span>{' '}
+                    <span style={{background:'#ffc300',color:'#333',padding:'0 6px',borderRadius:4}}>Yellow</span>
+                    <div style={{marginTop:6}}>Press them in order to match: Sun, Blood, Sky.</div>
+                    <div style={{fontSize:'0.95em',color:'var(--text-secondary)',marginTop:4}}>
+                      Enter a comma-separated color sequence (e.g. yellow,red,blue)
+                    </div>
+                  </div>
+                )
+                : currentPuzzle.question}
+            </div>
             <input
               className="vesq-input"
               type="text"
