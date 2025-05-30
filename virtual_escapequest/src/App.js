@@ -88,9 +88,9 @@ const INITIAL_PUZZLES = [
     id: 'riddle-book',
     trigger: 'book',
     type: 'riddle',
-    question: <>What gets wetter as it dries?</>,
+    question: 'What gets wetter as it dries?',
     answer: 'towel',
-    clue: 'It's something you use after a shower.',
+    clue: "It's something you use after a shower.",
     solved: false,
     objectLabel: 'Old Book'
   },
@@ -98,7 +98,7 @@ const INITIAL_PUZZLES = [
     id: 'math-note',
     trigger: 'note',
     type: 'math',
-    question: <>Solve: (7 × 4) - 6 = ?</>,
+    question: 'Solve: (7 × 4) - 6 = ?',
     answer: '22',
     clue: 'Remember operator precedence. Seven times four...',
     solved: false,
@@ -108,16 +108,7 @@ const INITIAL_PUZZLES = [
     id: 'color-lock',
     trigger: 'safe',
     type: 'pattern',
-    question: (
-      <div>
-        <div style={{marginBottom:8}}>The safe has three buttons in these colors:</div>
-        <span style={{background:'#e94560',padding:'0 6px',borderRadius:4}}>Red</span>{' '}
-        <span style={{background:'#16213e',color:'#fff',padding:'0 6px',borderRadius:4}}>Blue</span>{' '}
-        <span style={{background:'#ffc300',color:'#333',padding:'0 6px',borderRadius:4}}>Yellow</span>
-        <div style={{marginTop:6}}>Press them in order to match: Sun, Blood, Sky.</div>
-        <div style={{fontSize:'0.95em',color:'var(--text-secondary)',marginTop:4}}>Enter a comma-separated color sequence (e.g. yellow,red,blue)</div>
-      </div>
-    ),
+    question: 'The safe has three buttons: Red, Blue, Yellow. Press them in order to match: Sun, Blood, Sky. Enter a comma-separated color sequence.',
     answer: 'yellow,red,blue',
     clue: 'What color represents each thing? Sun: yellow, Blood: red, Sky: blue.',
     solved: false,

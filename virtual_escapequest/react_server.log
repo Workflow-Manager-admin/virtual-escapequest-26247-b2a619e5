@@ -248,3 +248,6 @@ src/App.js
   Line 93:14:  Parsing error: Unexpected token, expected "," (93:14)
 
 webpack compiled with 2 errors
+Compiling...
+Compiled successfully!
+webpack compiled successfully
