@@ -7,3 +7,98 @@
 (node:559) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
 Starting the development server...
 
+Compiled successfully!
+
+You can now view react-kavia in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://172.17.0.2:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/App.js
+Syntax error: Unexpected token, expected "," (93:14) (93:14)
+ERROR in [eslint] 
+src/App.js
+  Line 93:14:  Parsing error: Unexpected token, expected "," (93:14)
+
+webpack compiled with 1 error
+Compiling...
+Failed to compile.
+
+[eslint] 
+src/App.js
+Syntax error: Unexpected token, expected "," (93:14) (93:14)
+ERROR in ./src/App.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/src/App.js: Unexpected token, expected "," (93:14)
+
+  91 |     question: <>What gets wetter as it dries?</>,
+  92 |     answer: 'towel',
+> 93 |     clue: 'It's something you use after a shower.',
+     |               ^
+  94 |     solved: false,
+  95 |     objectLabel: 'Old Book'
+  96 |   },
+    at constructor (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:360:19)
+    at FlowParserMixin.raise (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:3327:19)
+    at FlowParserMixin.unexpected (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:3347:16)
+    at FlowParserMixin.expect (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:3657:12)
+    at FlowParserMixin.parseObjectLike (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:11506:14)
+    at FlowParserMixin.parseExprAtom (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:11024:23)
+    at FlowParserMixin.parseExprAtom (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:6937:20)
+    at FlowParserMixin.parseExprSubscripts (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:10758:23)
+    at FlowParserMixin.parseUpdate (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:10743:21)
+    at FlowParserMixin.parseMaybeUnary (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:10723:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:10576:61)
+    at FlowParserMixin.parseExprOps (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:10581:23)
+    at FlowParserMixin.parseMaybeConditional (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:10558:23)
+    at FlowParserMixin.parseMaybeAssign (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:10521:21)
+    at FlowParserMixin.parseMaybeAssign (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:5773:18)
+    at /home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:10491:39
+    at FlowParserMixin.allowInAnd (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:12100:12)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:10491:17)
+    at FlowParserMixin.parseExprListItem (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:11858:18)
+    at FlowParserMixin.parseExprList (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:11833:22)
+    at FlowParserMixin.parseArrayLike (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:11740:26)
+    at FlowParserMixin.parseArrayLike (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:5455:24)
+    at FlowParserMixin.parseExprAtom (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:11015:23)
+    at FlowParserMixin.parseExprAtom (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:6937:20)
+    at FlowParserMixin.parseExprSubscripts (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:10758:23)
+    at FlowParserMixin.parseUpdate (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:10743:21)
+    at FlowParserMixin.parseMaybeUnary (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:10723:23)
+    at FlowParserMixin.parseMaybeUnaryOrPrivate (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:10576:61)
+    at FlowParserMixin.parseExprOps (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:10581:23)
+    at FlowParserMixin.parseMaybeConditional (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:10558:23)
+    at FlowParserMixin.parseMaybeAssign (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:10521:21)
+    at FlowParserMixin.parseMaybeAssign (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:5773:18)
+    at /home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:10491:39
+    at FlowParserMixin.allowInAnd (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:12095:16)
+    at FlowParserMixin.parseMaybeAssignAllowIn (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:10491:17)
+    at FlowParserMixin.parseVar (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:13028:91)
+    at FlowParserMixin.parseVarStatement (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:12874:10)
+    at FlowParserMixin.parseStatementContent (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:12489:23)
+    at FlowParserMixin.parseStatementLike (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:12406:17)
+    at FlowParserMixin.parseStatementLike (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:5140:24)
+    at FlowParserMixin.parseModuleItem (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:12383:17)
+    at FlowParserMixin.parseBlockOrModuleBlockBody (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:12960:36)
+    at FlowParserMixin.parseBlockBody (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:12953:10)
+    at FlowParserMixin.parseProgram (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:12280:10)
+    at FlowParserMixin.parseTopLevel (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:12270:25)
+    at FlowParserMixin.parseTopLevel (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:5909:28)
+    at FlowParserMixin.parse (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:14120:10)
+    at parse (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/parser/lib/index.js:14154:38)
+    at parser (/home/kavia/workspace/code-generation/virtual-escapequest-26247-b2a619e5/virtual_escapequest/node_modules/@babel/core/lib/parser/index.js:41:34)
+    at parser.next (<anonymous>)
+
+ERROR in [eslint] 
+src/App.js
+  Line 93:14:  Parsing error: Unexpected token, expected "," (93:14)
+
+webpack compiled with 2 errors

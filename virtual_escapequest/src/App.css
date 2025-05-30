@@ -4,6 +4,11 @@
   --text-color: #ffffff;
   --text-secondary: rgba(255, 255, 255, 0.7);
   --border-color: rgba(255, 255, 255, 0.1);
+  --vesq-primary: #1a1a2e;
+  --vesq-secondary: #16213e;
+  --vesq-accent: #e94560;
+  --vesq-inventory-bg: #181828;
+  --vesq-sidebar-bg: #14141d;
 }
 
 body {
