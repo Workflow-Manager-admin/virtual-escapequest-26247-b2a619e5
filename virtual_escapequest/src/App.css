@@ -111,3 +111,373 @@ body {
   padding: 12px 24px;
   font-size: 1.1rem;
 }
+
+/* ========== EscapeQuest specific styles ========== */
+
+.vesq-main-container {
+  min-height: 100vh;
+  width: 100vw;
+  font-family: 'Inter', 'Roboto', 'Arial', sans-serif;
+  background: linear-gradient(120deg, var(--vesq-primary) 60%, var(--vesq-secondary) 100%);
+}
+
+.vesq-navbar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 50;
+  background: var(--vesq-primary);
+  box-shadow: 0 2px 18px #16213e9e;
+}
+
+.vesq-content-layout {
+  margin-top: 72px;
+  display: flex;
+  flex-direction: row;
+  min-height: calc(100vh - 72px);
+  position: relative;
+}
+
+/* SIDEBAR */
+.vesq-sidebar {
+  width: 260px;
+  padding: 40px 18px 20px 16px;
+  background: var(--vesq-sidebar-bg);
+  color: #fff;
+  border-right: 2px solid var(--vesq-accent);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 2px 0 32px #0c0c189e;
+  min-height: 510px;
+  min-width: 210px;
+  z-index: 3;
+}
+
+.vesq-timer {
+  font-size: 1.2em;
+  font-weight: bold;
+  background: #262a4e;
+  color: #fff2;
+  border-radius: 8px;
+  padding: 8px 14px;
+  margin-bottom: 6px;
+  border: 2px solid var(--vesq-accent);
+  color: var(--vesq-accent);
+  box-shadow: 0 2px 4px #1a1a2e44;
+}
+
+/* Inventory */
+.vesq-inventory {
+  margin-top: 8px;
+  background: var(--vesq-inventory-bg);
+  border-radius: 8px;
+  padding: 12px 12px 12px 13px;
+  min-height: 82px;
+  color: #fff;
+  font-size: 1rem;
+  box-shadow: 0 0 12px #1a1a2e22;
+}
+.vesq-inv-title {
+  font-weight: 700; 
+  font-size: 1.03em; 
+  color: var(--vesq-accent);
+  margin-bottom: 7px;
+  letter-spacing: 0.03em;
+}
+.vesq-no-items {
+  color: #bbb;
+  opacity: 0.7;
+}
+.vesq-item-list {
+  list-style: none;
+  margin: 0; padding: 0;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.vesq-item {
+  background: #1a1a2e;
+  border-radius: 4px;
+  padding: 2px 8px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 1.03em;
+  border: 1px solid var(--vesq-accent);
+}
+
+.vesq-hint-btn {
+  margin-top: 9px;
+  width: 100%;
+  font-size: 1.10em;
+  background: var(--vesq-accent);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 0;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+  box-shadow: 0 2px 4px #1a1a2e33;
+}
+.vesq-hint-btn:disabled {
+  opacity: 0.44;
+  filter: grayscale(0.93);
+  cursor: not-allowed;
+}
+.vesq-progress-bar {
+  margin-top:12px;
+  font-size:1.04em;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  border-top: 1px solid #222c;
+  padding-top: 8px;
+}
+.vesq-progress-pct {
+  color: #ffe185;
+  font-weight: 900;
+  margin-left: 6px;
+}
+
+/* Main Room Area */
+.vesq-room-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 500px;
+  padding: 16px;
+  position: relative;
+  min-width: 350px;
+}
+
+.vesq-room-bg {
+  width: 515px;
+  min-height: 375px;
+  height: 365px;
+  margin: 18px auto 10px;
+  position: relative;
+  background: radial-gradient(circle, #21213d 57%, #14141c 100%);
+  border-radius: 26px 26px 34px 34px;
+  box-shadow: 0 4px 64px #1a1a2e77, 0 1px 16px #13133570;
+  border: 3px solid var(--vesq-accent);
+  overflow: hidden;
+  backdrop-filter: blur(1.8px);
+}
+
+.vesq-room-label {
+  position: absolute;
+  left: 18px;
+  top: 14px;
+  color: #fff2;
+  font-size: 1.10em;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  z-index: 2;
+}
+
+.vesq-room-ambient {
+  position: absolute;
+  width: 100%; height: 100%;
+  left: 0; top: 0;
+  background:
+    linear-gradient(160deg, #e945604f 1%, #16213ea0 60%, #131337 100%),
+    url("https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80");
+  background-blend-mode: overlay;
+  opacity: 0.44;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Hidden clickable objects styles */
+.vesq-object-btn {
+  position: absolute;
+  background: rgba(24,24,45,0.95);
+  border: 2.5px solid var(--vesq-accent);
+  border-radius: 10px;
+  padding: 3px 10px 7px 10px;
+  cursor: pointer;
+  transition: box-shadow 0.13s, border-color 0.14s;
+  box-shadow: 0 3px 14px var(--vesq-accent), 0 1px 8px #1a1a2e33;
+}
+.vesq-object-btn:hover, .vesq-object-btn:focus {
+  border-color: #ffe185;
+  box-shadow: 0 6px 28px #ffe185cc, 0 2px 8px #1a1a2e33;
+  outline: none;
+}
+
+/* Room decorations (fake) */
+.vesq-room-decor .vesq-window {
+  position: absolute; left: 22%; top: 14%; width: 64px; height: 66px;
+  background: #dbe6fd2b;
+  border-radius: 9px;
+  box-shadow: 0 0 14px #fff8;
+  border: 2.3px solid #e94560;
+  z-index: 0;
+}
+.vesq-room-decor .vesq-shelf {
+  position: absolute; left: 48%; top: 18%; width: 110px; height: 13px;
+  background: #1e1e36; border-radius: 6px 8px 6px 9px;
+  box-shadow: 0 0 12px #fff2,-3px 0 9px #e945604c;
+  z-index: 0;
+}
+.vesq-room-decor .vesq-desk {
+  position: absolute; left: 12%; top: 61%; width: 96px; height: 38px;
+  background: #191927; border-radius: 10px 13px 18px 9px;
+  box-shadow: 0 0 19px #e945608c,2px 0 3px #fff0;
+  z-index: 0;
+}
+.vesq-room-decor .vesq-chest {
+  position: absolute; left: 61%; top: 70%; width: 60px; height: 36px;
+  background: #262a4e; border-radius: 8px 10px 14px 11px;
+  box-shadow: 0 0 7px #e94560bb,2px 0 2px #fff2;
+  z-index: 0;
+}
+
+/* Game Tip & Buttons */
+.vesq-game-tip {
+  margin: 10px 0 4px 0;
+  color: #ffe185;
+  font-weight: 500;
+  font-size: 1.1em;
+  letter-spacing: 0.02em;
+  min-height: 32px;
+  text-align: center;
+}
+
+.vesq-game-restart {
+  background: var(--vesq-secondary);
+  color: var(--vesq-accent);
+  border: 2px solid var(--vesq-accent);
+  font-weight: bold;
+  margin-top:10px;
+}
+.vesq-game-restart:hover {
+  background: var(--vesq-accent);
+  color: #fff;
+}
+
+/* MODAL styles */
+.vesq-modal-backdrop {
+  position: fixed; top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: #1a1a2ecf;
+  z-index: 2222;
+  display: flex; justify-content: center; align-items: center;
+}
+.vesq-modal {
+  background: #22223bfa;
+  padding: 24px 30px 24px 22px;
+  border-radius: 18px;
+  box-shadow: 0 8px 64px #000b;
+  min-width: 300px; max-width: 380px;
+  max-height: 84vh; overflow-y: auto;
+  position: relative;
+}
+.vesq-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.14em;
+  color: var(--vesq-accent);
+  font-weight: bold;
+  margin-bottom: 12px;
+  letter-spacing: 0.05em;
+}
+.vesq-modal-close {
+  background: none;
+  border: none;
+  color: #ffe185;
+  font-size: 1.6em;
+  cursor: pointer;
+  transition: color 0.16s;
+  font-weight: 800;
+}
+.vesq-modal-close:hover {
+  color: #e94560;
+}
+
+.vesq-modal-body {
+  color: #fee;
+}
+
+/* Puzzle Q/A */
+.vesq-puzzle-q {
+  font-weight: bold;
+  font-size: 1.07em;
+  color: #fff;
+  margin-bottom: 7px;
+}
+.vesq-puzzle-feedback {
+  font-weight: 500;
+  margin: 6px 0;
+  min-height: 1.5em;
+}
+
+.vesq-input {
+  background: #eee3;
+  border: 1.7px solid var(--vesq-accent);
+  color: #fff;
+  border-radius: 5.5px;
+  font-size: 1.02em;
+  box-shadow: 0 1px 7px #1a1a2e22;
+  outline: none;
+  margin-bottom: 7px;
+}
+
+.vesq-input:focus {
+  border-color: #ffe185;
+}
+
+.vesq-submit-btn {
+  background: var(--vesq-accent) !important;
+}
+
+/* Hint Modal */
+.vesq-hint-modal-body {
+  color: #ffe185;
+  font-size: 1.11em;
+}
+@media (max-width: 800px) {
+  .vesq-content-layout {
+    flex-direction: column;
+  }
+  .vesq-sidebar {
+    width: 100vw;
+    min-width: unset;
+    border-right: none;
+    border-bottom: 4px solid #e94560;
+    flex-direction: row;
+    gap: 1vw;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 16px 10px 10px 10px;
+    min-height: unset;
+  }
+}
+
+@media (max-width: 600px) {
+  .vesq-main-container {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  .vesq-room-main {
+    min-width: unset;
+    padding: 3px;
+  }
+  .vesq-room-bg {
+    width: 99vw;
+    min-width: 99vw;
+    height: 260px;
+    min-height: unset;
+    margin-top: 0.7em;
+    margin-bottom: 0.5em;
+  }
+  .vesq-sidebar {
+    min-width: unset;
+    font-size: 0.90em;
+  }
+}
