@@ -109,14 +109,14 @@ const INITIAL_PUZZLES = [
     trigger: 'safe',
     type: 'pattern',
     question: (
-      <>
+      <div>
         <div style={{marginBottom:8}}>The safe has three buttons in these colors:</div>
-        <span style={{background:'#e94560',padding:'0 6px',borderRadius:4}}>Red</span>,{' '}
-        <span style={{background:'#16213e',color:'#fff',padding:'0 6px',borderRadius:4}}>Blue</span>,{' '}
+        <span style={{background:'#e94560',padding:'0 6px',borderRadius:4}}>Red</span>{' '}
+        <span style={{background:'#16213e',color:'#fff',padding:'0 6px',borderRadius:4}}>Blue</span>{' '}
         <span style={{background:'#ffc300',color:'#333',padding:'0 6px',borderRadius:4}}>Yellow</span>
         <div style={{marginTop:6}}>Press them in order to match: Sun, Blood, Sky.</div>
         <div style={{fontSize:'0.95em',color:'var(--text-secondary)',marginTop:4}}>Enter a comma-separated color sequence (e.g. yellow,red,blue)</div>
-      </>
+      </div>
     ),
     answer: 'yellow,red,blue',
     clue: 'What color represents each thing? Sun: yellow, Blood: red, Sky: blue.',
